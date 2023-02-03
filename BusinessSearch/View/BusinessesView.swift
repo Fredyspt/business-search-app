@@ -11,7 +11,7 @@ class BusinessesView: UIView {
 
     lazy var businessesTable: UITableView = {
         let businessesTable = UITableView()
-        businessesTable.backgroundColor = UIColor(named: "BackgroundColor")
+        businessesTable.backgroundColor = .systemBackground
         businessesTable.allowsSelection = true
         businessesTable.register(BusinessCell.self, forCellReuseIdentifier: BusinessCell.identifier)
         businessesTable.translatesAutoresizingMaskIntoConstraints = false

@@ -6,9 +6,16 @@
 //
 
 import UIKit
-
+/*
+ Having a global object as an image cache could not be the best idea.
+ It is fast and gets the job done, but lacks persistance against URLCache,
+ so a possible improvement could be to use URLCache instead
+ */
 let imageCache = NSCache<AnyObject, AnyObject>()
 extension UIImageView {
+    /*
+     Load an image from an external URL and cache it if the request was successful.
+     */
     func loadFrom(_ urlString: String) {
         guard let url = URL(string: urlString) else { return }
         
@@ -17,9 +24,13 @@ extension UIImageView {
         }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
-            if let safeData = data {
+            if let error {
+                print(error)
+                return
+            }
+            if let data {
                 DispatchQueue.main.async { [weak self] in
-                    if let image = UIImage(data: safeData) {
+                    if let image = UIImage(data: data) {
                         imageCache.setObject(image, forKey: urlString as AnyObject)
                         self?.image = image
                     }

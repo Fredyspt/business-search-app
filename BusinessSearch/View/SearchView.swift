@@ -28,7 +28,7 @@ class SearchView: UIView {
     
     private lazy var searchFieldContainer: UIView = {
         let searchFieldContainer = UIView()
-        searchFieldContainer.backgroundColor = .white
+        searchFieldContainer.backgroundColor = .systemGray5
         searchFieldContainer.layer.cornerRadius = 25
         return searchFieldContainer
     }()
@@ -37,11 +37,7 @@ class SearchView: UIView {
         let searchField = UITextField()
         searchField.font = UIFont.systemFont(ofSize: 20)
         searchField.textColor = .black
-        searchField.attributedPlaceholder = NSAttributedString(
-            string: "Search...",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
-        )
-        searchField.backgroundColor = .white
+        searchField.placeholder = "Search..."
         searchField.returnKeyType = .search
         return searchField
     }()
@@ -68,7 +64,7 @@ class SearchView: UIView {
     
     //MARK: - Configuration
     private func setup() {
-        backgroundColor = UIColor(named: "BackgroundColor")
+        backgroundColor = .systemBackground
         addSubview(logo)
         searchFieldContainer.addSubview(searchField)
         searchSection.addArrangedSubview(searchFieldContainer)
@@ -112,9 +108,9 @@ class SearchView: UIView {
             searchFieldContainer.topAnchor.constraint(equalTo: searchSection.topAnchor),
             searchFieldContainer.bottomAnchor.constraint(equalTo: searchSection.bottomAnchor),
             searchFieldContainer.widthAnchor.constraint(equalToConstant: 230),
-            searchField.leadingAnchor.constraint(equalTo: searchFieldContainer.layoutMarginsGuide.leadingAnchor),
+            searchField.leadingAnchor.constraint(equalTo: searchFieldContainer.layoutMarginsGuide.leadingAnchor, constant: 10),
             searchField.topAnchor.constraint(equalTo: searchFieldContainer.layoutMarginsGuide.topAnchor),
-            searchField.trailingAnchor.constraint(equalTo: searchFieldContainer.layoutMarginsGuide.trailingAnchor),
+            searchField.trailingAnchor.constraint(equalTo: searchFieldContainer.layoutMarginsGuide.trailingAnchor, constant: -10),
             searchField.bottomAnchor.constraint(equalTo: searchFieldContainer.layoutMarginsGuide.bottomAnchor),
         ])
     }

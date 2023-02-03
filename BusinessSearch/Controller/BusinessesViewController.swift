@@ -61,7 +61,18 @@ extension BusinessesViewController: UITableViewDelegate, UITableViewDataSource {
 //MARK: - YelpAPIManagerDelegate conformance
 extension BusinessesViewController: YelpAPIManagerDelegate {
     func didFailWithError(_ error: Error) {
-        print(error)
+        DispatchQueue.main.async {
+            switch(error) {
+            case APIError.noData(let message):
+                let errorLabel = UILabel()
+                errorLabel.font = .systemFont(ofSize: 25)
+                errorLabel.text = message
+                errorLabel.textAlignment = .center
+                self.businessesView.businessesTable.backgroundView = errorLabel
+            default:
+                print(error.localizedDescription)
+            }
+        }
     }
     
     func didUpdateBusinessesData(_ manager: YelpAPIManager, businesses: Businesses) {
