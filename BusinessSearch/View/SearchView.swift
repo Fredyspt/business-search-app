@@ -36,7 +36,6 @@ class SearchView: UIView {
     lazy var searchField: UITextField = {
         let searchField = UITextField()
         searchField.font = UIFont.systemFont(ofSize: 20)
-        searchField.textColor = .black
         searchField.placeholder = "Search..."
         searchField.returnKeyType = .search
         return searchField

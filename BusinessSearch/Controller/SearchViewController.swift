@@ -37,9 +37,12 @@ extension SearchViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let location = textField.text else { return }
-        
+        var locationTrimmed = location
+        if locationTrimmed.last == " " {
+            locationTrimmed.removeLast()
+        }
         let businessesVC = BusinessesViewController()
-        businessesVC.location = location
+        businessesVC.location = locationTrimmed
         navigationController?.pushViewController(businessesVC, animated: true)
         
         textField.text = String()
