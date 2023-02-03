@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		48B303FC298C9A0A00F755CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B303FB298C9A0A00F755CB /* AppDelegate.swift */; };
 		48B303FE298C9A0A00F755CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B303FD298C9A0A00F755CB /* SceneDelegate.swift */; };
-		48B30400298C9A0A00F755CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B303FF298C9A0A00F755CB /* ViewController.swift */; };
-		48B30403298C9A0A00F755CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B30401298C9A0A00F755CB /* Main.storyboard */; };
+		48B30400298C9A0A00F755CB /* BusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B303FF298C9A0A00F755CB /* BusinessesViewController.swift */; };
 		48B30405298C9A0A00F755CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B30404298C9A0A00F755CB /* Assets.xcassets */; };
 		48B30408298C9A0A00F755CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B30406298C9A0A00F755CB /* LaunchScreen.storyboard */; };
+		48B30413298C9FB000F755CB /* YelpAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B30412298C9FB000F755CB /* YelpAPIManager.swift */; };
+		48B30415298CA0F000F755CB /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B30414298CA0F000F755CB /* APIResponse.swift */; };
+		48B30417298CA7D800F755CB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B30416298CA7D800F755CB /* SearchViewController.swift */; };
+		48B30419298CA80600F755CB /* BusinessInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B30418298CA80600F755CB /* BusinessInfoViewController.swift */; };
+		48B3041B298CA82500F755CB /* BusinessesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B3041A298CA82500F755CB /* BusinessesView.swift */; };
+		48B3041D298CA84000F755CB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B3041C298CA84000F755CB /* SearchView.swift */; };
+		48B3041F298CA85500F755CB /* BusinessInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B3041E298CA85500F755CB /* BusinessInfoView.swift */; };
+		48B30421298CA8A500F755CB /* API-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48B30420298CA8A500F755CB /* API-Info.plist */; };
+		48B30423298CA8CD00F755CB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 48B30422298CA8CD00F755CB /* .gitignore */; };
+		48B30426298CAB5F00F755CB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B30425298CAB5F00F755CB /* UIView+Extension.swift */; };
+		48B30428298CC31400F755CB /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B30427298CC31400F755CB /* BusinessCell.swift */; };
+		48B3042A298CFD5000F755CB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B30429298CFD5000F755CB /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48B303F8298C9A0A00F755CB /* BusinessSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B303FB298C9A0A00F755CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B303FD298C9A0A00F755CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48B303FF298C9A0A00F755CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48B30402298C9A0A00F755CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48B303FF298C9A0A00F755CB /* BusinessesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessesViewController.swift; sourceTree = "<group>"; };
 		48B30404298C9A0A00F755CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B30407298C9A0A00F755CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B30409298C9A0A00F755CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B30412298C9FB000F755CB /* YelpAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPIManager.swift; sourceTree = "<group>"; };
+		48B30414298CA0F000F755CB /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		48B30416298CA7D800F755CB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = BusinessSearch/Controller/SearchViewController.swift; sourceTree = SOURCE_ROOT; };
+		48B30418298CA80600F755CB /* BusinessInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInfoViewController.swift; sourceTree = "<group>"; };
+		48B3041A298CA82500F755CB /* BusinessesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessesView.swift; sourceTree = "<group>"; };
+		48B3041C298CA84000F755CB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		48B3041E298CA85500F755CB /* BusinessInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInfoView.swift; sourceTree = "<group>"; };
+		48B30420298CA8A500F755CB /* API-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "API-Info.plist"; sourceTree = "<group>"; };
+		48B30422298CA8CD00F755CB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		48B30425298CAB5F00F755CB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		48B30427298CC31400F755CB /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		48B30429298CFD5000F755CB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,58 @@
 		48B303FA298C9A0A00F755CB /* BusinessSearch */ = {
 			isa = PBXGroup;
 			children = (
+				48B30424298CAB2900F755CB /* Extensions */,
+				48B30411298C9F7700F755CB /* Controller */,
+				48B30410298C9F6F00F755CB /* View */,
+				48B3040F298C9F6B00F755CB /* Model */,
 				48B303FB298C9A0A00F755CB /* AppDelegate.swift */,
 				48B303FD298C9A0A00F755CB /* SceneDelegate.swift */,
-				48B303FF298C9A0A00F755CB /* ViewController.swift */,
-				48B30401298C9A0A00F755CB /* Main.storyboard */,
 				48B30404298C9A0A00F755CB /* Assets.xcassets */,
 				48B30406298C9A0A00F755CB /* LaunchScreen.storyboard */,
 				48B30409298C9A0A00F755CB /* Info.plist */,
+				48B30420298CA8A500F755CB /* API-Info.plist */,
+				48B30422298CA8CD00F755CB /* .gitignore */,
 			);
 			path = BusinessSearch;
+			sourceTree = "<group>";
+		};
+		48B3040F298C9F6B00F755CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48B30414298CA0F000F755CB /* APIResponse.swift */,
+				48B30412298C9FB000F755CB /* YelpAPIManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48B30410298C9F6F00F755CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48B3041A298CA82500F755CB /* BusinessesView.swift */,
+				48B3041C298CA84000F755CB /* SearchView.swift */,
+				48B3041E298CA85500F755CB /* BusinessInfoView.swift */,
+				48B30427298CC31400F755CB /* BusinessCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48B30411298C9F7700F755CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48B30416298CA7D800F755CB /* SearchViewController.swift */,
+				48B303FF298C9A0A00F755CB /* BusinessesViewController.swift */,
+				48B30418298CA80600F755CB /* BusinessInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48B30424298CAB2900F755CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48B30425298CAB5F00F755CB /* UIView+Extension.swift */,
+				48B30429298CFD5000F755CB /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +190,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B30423298CA8CD00F755CB /* .gitignore in Resources */,
+				48B30421298CA8A500F755CB /* API-Info.plist in Resources */,
 				48B30408298C9A0A00F755CB /* LaunchScreen.storyboard in Resources */,
 				48B30405298C9A0A00F755CB /* Assets.xcassets in Resources */,
-				48B30403298C9A0A00F755CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +204,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B30400298C9A0A00F755CB /* ViewController.swift in Sources */,
+				48B30426298CAB5F00F755CB /* UIView+Extension.swift in Sources */,
+				48B30417298CA7D800F755CB /* SearchViewController.swift in Sources */,
+				48B3042A298CFD5000F755CB /* UIImageView+Extension.swift in Sources */,
+				48B3041D298CA84000F755CB /* SearchView.swift in Sources */,
+				48B30400298C9A0A00F755CB /* BusinessesViewController.swift in Sources */,
+				48B30419298CA80600F755CB /* BusinessInfoViewController.swift in Sources */,
+				48B30428298CC31400F755CB /* BusinessCell.swift in Sources */,
 				48B303FC298C9A0A00F755CB /* AppDelegate.swift in Sources */,
+				48B30413298C9FB000F755CB /* YelpAPIManager.swift in Sources */,
+				48B30415298CA0F000F755CB /* APIResponse.swift in Sources */,
+				48B3041B298CA82500F755CB /* BusinessesView.swift in Sources */,
+				48B3041F298CA85500F755CB /* BusinessInfoView.swift in Sources */,
 				48B303FE298C9A0A00F755CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		48B30401298C9A0A00F755CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48B30402298C9A0A00F755CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		48B30406298C9A0A00F755CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +360,8 @@
 				INFOPLIST_FILE = BusinessSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fredy.BusinessSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +390,8 @@
 				INFOPLIST_FILE = BusinessSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +399,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fredy.BusinessSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
