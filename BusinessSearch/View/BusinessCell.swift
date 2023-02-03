@@ -54,7 +54,7 @@ class BusinessCell: UITableViewCell {
     
     private lazy var ratingLabel: UILabel = {
         let ratingLabel = UILabel()
-        ratingLabel.text = "⭐️ 4.5"
+        ratingLabel.text = "⭐️"
         ratingLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         return ratingLabel
     }()
@@ -93,7 +93,7 @@ class BusinessCell: UITableViewCell {
         
         var ratingString = "⭐️"
         if let rating = business.rating {
-            ratingString.append(String(rating))
+            ratingString.append(String(format: "%.2f", rating))
         }
         
         ratingLabel.text = ratingString

@@ -67,7 +67,7 @@ class BusinessInfoView: UIView {
     
     private lazy var ratingLabel: UILabel = {
         let ratingLabel = UILabel()
-        ratingLabel.text = "⭐️ 4.5 (9999)"
+        ratingLabel.text = "⭐️"
         ratingLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         return ratingLabel
     }()
@@ -118,7 +118,7 @@ class BusinessInfoView: UIView {
         
         var ratingString = "⭐️"
         if let rating = business.rating {
-            ratingString.append(String(rating))
+            ratingString.append(String(format: "%.2f", rating))
         }
         
         if let reviewCount = business.review_count {
